@@ -32,8 +32,10 @@ body {
     font-weight: 400;
   }
 
-  .navbar-brand{
+  .navbar-brand {
     width: 100px;
   }
-
+}
+.img-fluid {
+  max-width: 25vw;
 }
