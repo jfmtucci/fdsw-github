@@ -203,30 +203,46 @@
         magnam, aspernatur officiis quasi culpa tempora est commodi. Voluptate
         beatae tempora quaerat?
       </p>
+      <div class="align-form">
+        <form>
+          <div class="form-group mb-4">
+            <label class="mb-2">Nombre</label>
+            <input
+              class="form-control"
+              placeholder="Nombre"
+              title="Nombre solo Acepta Letras y Espacios en Blanco"
+              pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            />
+          </div>
 
-      <form>
-        <div class="form-group mb-4">
-          <label class="mb-2">Nombre</label>
-          <input class="form-control" placeholder="Nombre" />
-        </div>
+          <div class="form-group mb-4">
+            <label class="mb-2">Correo electrónico</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Correo electrónico"
+              title="Email@example.com"
+              pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
+            />
+          </div>
 
-        <div class="form-group mb-4">
-          <label class="mb-2">Correo electrónico</label>
-          <input class="form-control" placeholder="Correo electrónico" />
-        </div>
+          <div class="form-group">
+            <label class="mb-2">Mensaje</label>
+            <textarea
+              cols="50"
+              rows="5"
+              class="form-control"
+              placeholder="Escribe aquí tu mensaje"
+              title="Tu Comentario No Debe Exceder los 255 Caracteres"
+              data-pattern="^.{1,255}$"
+            ></textarea>
+          </div>
 
-        <div class="form-group">
-          <label class="mb-2">Mensaje</label>
-          <textarea
-            class="form-control"
-            placeholder="Escribe aquí tu mensaje"
-          ></textarea>
-        </div>
-
-        <div class="my-3 text-end">
-          <button class="btn btn-info text-light">Enviar</button>
-        </div>
-      </form>
+          <div class="my-3 text-end">
+            <button class="btn btn-info text-light">Enviar</button>
+          </div>
+        </form>
+      </div>
     </section>
 
     <footer class="bg-dark text-center text-light p-4">

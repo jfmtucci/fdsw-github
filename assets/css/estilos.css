@@ -36,6 +36,18 @@ body {
     width: 100px;
   }
 }
+
+.align-form {
+  display: flex;
+  justify-content: center;
+}
+form {
+  width: 70%;
+}
 .img-fluid {
-  max-width: 25vw;
+  max-width: 20vw;
+}
+
+.form-group textarea {
+  resize: none;
 }
